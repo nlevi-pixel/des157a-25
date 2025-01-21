@@ -49,6 +49,11 @@ header h2 {
     margin: 0;
     position: absolute;
     top: 100px;
+    font-family: "Allerta Stencil";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 h3 {
