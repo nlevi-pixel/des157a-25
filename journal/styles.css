@@ -24,7 +24,7 @@ body {
 header {
     color: #D74C07;
     font-family: Allerta;
-    font-size: 2.5em;
+    
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -41,19 +41,22 @@ header h1 {
     margin: 0;
     position: absolute;
     top: 10;
+    font-size: 5em;
+    padding: 0px 30px;
 
     
 }
 header h2 {
     align-self: flex-end;
-    margin: 0;
+    margin: 30px 30px 60px 60px;
     position: absolute;
     top: 100px;
     font-family: "Allerta Stencil";
-    font-size: 80px;
+    font-size: 4.5em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 
 h3 {
@@ -79,8 +82,9 @@ article {
     flex: 1;
     border-radius: 100px;
     background: rgba(168, 207, 225, 0.44); 
-    margin: 30px;
+    margin: 50px  30px;
     box-sizing: border-box; 
+    
     
     
     

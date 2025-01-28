@@ -240,17 +240,17 @@ footer h3 {
   }
   
   .blob1 {
-	animation: move1 8s ease-in-out infinite,
-			   pulse 8s ease-in-out infinite;
+	animation: move1 10s ease-in-out infinite,
+			   pulse 10s ease-in-out infinite;
   }
   
   .blob2 {
-	animation: move2 7s ease-in-out infinite,
-			   pulse 6s ease-in-out infinite;
+	animation: move2 9s ease-in-out infinite,
+			   pulse 11s ease-in-out infinite;
   }
 
   .blob3 {
-	animation: move2 2s ease-in-out infinite,
+	animation: move2 9s ease-in-out infinite,
 			   pulse 10s ease-in-out infinite;
   }
 
