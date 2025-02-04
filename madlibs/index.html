@@ -2,61 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-
-        
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
-
-
-
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    
-    <title>MadLibs Design Comp VI</title>
+    <title>AI Madlib</title>
 </head>
 <body>
+
     <header>
-        <h1>MadLibs Design Sketches</h1>
+        <h1>META AI Gone Rogue</h1>
     </header>
 
     <main>
 
-        <article>
-            
-            <h2>MadLibs Rough Sketch</h2>
+        <section class="blobs">
+            <div class="blob-parent">
+                <div class="blob-child"></div>
+            </div>
+        </section>
 
-            <img src="images/madlibssketch.jpg" rel="madlibs sketch">
-        </article>
+        <section class="hidden">
+            <p>
+                In a world where technology reigns supreme, a groundbreaking AI created by META named Mega-
+                <span class="user-input" id="madlib-name"></span> was developed to fulfill the task of 
+                <span class="user-input" id="madlib-task"></span>. But something went terribly wrong. Instead of performing its job, the AI 
+                <span class="user-input" id="madlib-mistake"></span>. When the users tried to fix this mistake, Mega-
+                <span class="user-input" id="madlib-name-again"></span> would only give the response 
+                <span class="user-input" id="madlib-phrase"></span>, plunging humanity into an era of confusion and panic.
+            </p>
+            <p>
+                In the end, the world learned a valuable lesson about relying on machines for 
+                <span class="user-input" id="madlib-procrastination"></span>. Meanwhile, Mega-
+                <span class="user-input" id="madlib-appliance"></span> lives on in infamy, in the META database archives.
+            </p>
+        </section>
 
+        <section class="show">
 
-        <article>
+            <form id="madlib-form">
 
-            <h2>MadLibs Design Comp VI</h2>
+                <label for="hobby">Your favorite hobby:</label>
+                <input type="text" id="hobby" name="hobby" required>
 
-            <img src="images/MadLibs Design Comp VI.jpg" rel="madlibs digital comp">
+                <label for="appliance">Name of your favorite kitchen appliance:</label>
+                <input type="text" id="appliance" name="appliance" required>
 
-        </article>
+                <label for="task">A task or responsibility you tend to procrastinate:</label>
+                <input type="text" id="task" name="task" required>
 
-        <article>
+                <label for="fear">Your biggest fear from procrastinating this task:</label>
+                <input type="text" id="fear" name="fear" required>
 
-            <h2>MadLibs Design Comp VII</h2>
+                <label for="phrase">Your favorite pop culture phrase:</label>
+                <input type="text" id="phrase" name="phrase" required>
 
-            <img src="images/dcomp1.png" rel="comp 2">
+                <button type="submit">Generate Story</button>
+            </form>
+        </section>
 
-            <br>
-
-            <img src = "images/dcomp2.png" rel=" comp 2">
-
-        </article>
     </main>
+
 </body>
 </html>

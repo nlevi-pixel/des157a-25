@@ -1,115 +1,170 @@
-h1, h2, h3, p, ul, ol {
-	
-	margin: 0;
-	padding: 0;
+
+.hidden {
+    display: none;
 }
 
-nav ul, nav ol {
-	
-	list-style-type:none;
-}
 
-img {
-	
-	max-width: 600px;
-	height: auto;
-    border-radius: 10px;
-    background-color:#c04406;
-    background: local;
-    width: 100%;
-
-    
-}
-
-body {
-    background: rgba(210, 165, 152, 0.57);
-    
-}
-
-header {
-    color: #D74C07;
-    font-family: Allerta;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.show {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    position: relative;
-    margin: 30px 30px;
-    padding: 10px;
-    }
+    gap: 5rem;
+    max-width: 400px;
+    height: auto;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: #e5eef9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    justify-content: top;
+    flex: 3;
+    
+}
 
 
+.show input {
+    width: 80%;
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+    background: #fff;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+    margin-bottom: 20px;
+}
 
 
-h2 {
-    color: #1E1E1E;
+.show input:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
 
-font-family: "Baloo Bhai 2";
-font-size: 3em;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin: 20px 0px;
 
+.show label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+   
+    margin-bottom: 10px;
+    
+}
+
+
+.show button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+}
+
+.show button:hover {
+    background: #0056b3;
 }
 
 
 main {
-   margin: 10px;
-   padding: 10px;
-   display: flex;
-    
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 100px;
 }
 
 
-article {
+body {
+    animation: changeBg 20s infinite;
+}
 
+
+.blobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
-    border-radius: 100px;
-    margin: 30px;
-    box-sizing: border-box; 
-    align-self: center;
-    flex-direction: column;
+}
+
+
+.blob-parent {
+    height: 400px;
+    width: 340px;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    background: rgba(192, 216, 255, 0.178);
+    box-shadow: inset 6px 33px 20px 0 #fdfdfd, inset 20px 80px 15px 0 #f6f6f677, 10px 20px 20px 0px #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
  
-
-    
-    
-    
-}
-
-h3 {
-    margin: 5px;
-}
-
-article p, ol, li {
-    line-height: 150%;
-    color: #1E1E1E;
-
-    font-family: "Baloo Bhai 2";
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-
-}
-
-article ol {
-    margin: 10px;
-}
-
-article a {
-    text-decoration: none;
-    color: #c04406;
-    
-
-}
-
-article a:hover {
-    color: rgb(41, 127, 168);
+    right: 50px;
+   
 }
 
 
+.blob-child {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #fbfcfd70, #b9cbf073);
+    border-radius: 80%;
+    position: absolute;
+    animation: rotateBlob 4s ease-in-out infinite alternate;
+}
+
+.blob-child::before {
+    content: '';
+    position: absolute;
+    border-radius: 37% 54% 46% 46%;
+    background: rgb(93, 90, 90);
+    width: 20px;
+    height: 50px;
+    transform: rotate(25deg);
+    bottom: 50px;
+    right: 20px;
+}
+
+
+
+
+
+@keyframes rotateBlob {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    20% {
+        transform: rotate(-36deg) translateY(20px) translateX(20px);
+    }
+    40% {
+        transform: rotate(-72deg) translateY(40px) translateX(20px);
+    }
+    60% {
+        transform: rotate(-108deg) translateY(60px)translateX(20px);
+    }
+    80% {
+        transform: rotate(-144deg) translateY(80px)translateX(20px);
+    }
+    100% {
+        transform: rotate(-150deg) translateY(80px)translateX(20px);
+    }
+}
+
+
+header {
+    text-align: left;
+    margin: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@keyframes changeBg {
+    0% {background: url('images/bg2.svg');}
+    25% {background: url('images/bg1.svg');}
+    50% {background: url('images/bg2.svg');}
+    75% {background: url('images/bg1.svg');}
+    100% {background: url('images/bg2.svg');}
+}

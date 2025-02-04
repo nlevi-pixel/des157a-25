@@ -80,11 +80,12 @@ main {
 
 article {
     padding: 50px;
-    flex: 1;
+    max-width: 900px;
     border-radius: 100px;
     background: rgba(168, 207, 225, 0.44); 
     margin: 50px  30px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    min-width: 50; 
     
     
     
@@ -143,3 +144,4 @@ time {
     margin: 0px 0px 500px;
 
 }
+
