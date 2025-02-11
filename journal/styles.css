@@ -132,9 +132,13 @@ article a:hover {
     background-color: rgb(251, 239, 224);
 }
 
+.three {
+    background-color: #ebb27a;
+}
+
 time {
 
-    background-color:  #fbfcff;
+    background-color:  whitesmoke;
     border-radius: 20px;
     padding: 7px;
     flex-shrink: 0;
