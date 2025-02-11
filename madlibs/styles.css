@@ -16,21 +16,15 @@ h2 {
     font-size: 2em;
 }
 
-.madlib {
-    margin: 40px;
-    justify-self: center;
-    justify-items: center;
-    align-content: center;
-}
 
 
 form {
-    justify-content: center;
-    align-items: cetner;
+    
+    
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-width: 600x;
+    max-width: 400px;
     
     height: auto;
     margin-right: 90px;
