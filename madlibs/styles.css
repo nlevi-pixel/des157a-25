@@ -1,27 +1,49 @@
-
-.hidden {
-    display: none;
+h1 {
+    font-family: Saira;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
 }
 
 
-.show {
+h2 {
+    font-family: "Saira", serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #0056b3;
+    font-size: 2em;
+}
+
+
+
+
+form {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 20px;
     max-width: 400px;
     height: auto;
-    margin: 50px auto;
+    margin-right: 90px;
+    margin-bottom: 90px;
     padding: 25px;
     border-radius: 12px;
     background: #e5eef9;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     justify-content: center;
     flex: 3;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     
 }
 
 
-.show input {
+form input {
     width: 80%;
     padding: 5px;
     border-radius: 25px;
@@ -30,28 +52,26 @@
     font-size: 16px;
     transition: 0.3s ease-in-out;
     outline: none;
-    margin-bottom: 20px;
-}
-
-
-.show input:hover {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-
-.show label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    display: block;
-   
-    margin-bottom: 10px;
     
 }
 
 
-.show button {
+form input:focus {
+    border-color: #8362d1;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    
+}
+
+
+form button {
     background: #007bff;
     color: white;
     padding: 12px;
@@ -65,7 +85,7 @@
   
 }
 
-.show button:hover {
+form button:focus {
     background: #0056b3;
 }
 
@@ -74,12 +94,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px 100px;
+    
 }
 
 
 body {
-    animation: changeBg 20s infinite;
+    background-image: url('images/bg1.svg');
+    animation: bg 3s ease-in-out;
+
 }
 
 
@@ -88,6 +110,8 @@ body {
     justify-content: center;
     align-items: center;
     flex: 1;
+    margin-left: 50px;
+    
 }
 
 
@@ -95,14 +119,14 @@ body {
     height: 400px;
     width: 340px;
     border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
-    background: rgba(192, 216, 255, 0.178);
-    box-shadow: inset 6px 33px 20px 0 #fdfdfd, inset 20px 80px 15px 0 #f6f6f677, 10px 20px 20px 0px #c9c9c9;
+    background: rgba(192, 200, 255, 0.468);
+    box-shadow: inset 6px 33px 20px 0 #9160eb81, inset 20px 80px 15px 0 #8c060612, 10px 20px 20px 0px #c9c9c9;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
- 
     right: 50px;
+    animation: rotateBlob 4s ease-in-out infinite alternate;
    
 }
 
@@ -110,10 +134,10 @@ body {
 .blob-child {
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, #fbfcfd70, #b9cbf073);
+    background: radial-gradient(circle, #86b5fbd7, #fffffff1);
     border-radius: 80%;
     position: absolute;
-    animation: rotateBlob 4s ease-in-out infinite alternate;
+    animation: rotateEye 4s ease-in-out infinite alternate;
 }
 
 .blob-child::before {
@@ -132,7 +156,7 @@ body {
 
 
 
-@keyframes rotateBlob {
+@keyframes rotateEye {
     0% {
         transform: rotate(0deg) translateY(0);
     }
@@ -153,18 +177,33 @@ body {
     }
 }
 
+@keyframes rotateBlob {
+    0% {
+        border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    }
+    20% {
+        border-radius: 58% 53% 33% 74% / 50% 48% 53% 50%;
+    }
+    40% {
+        border-radius: 58% 63% 33% 64% / 50% 58% 53% 50%;;
+    }
+    60% {
+        border-radius: 58% 73% 33% 64% / 60% 38% 53% 50%;;
+    }
+    80% {
+        border-radius: 58% 43% 33% 72% / 50% 38% 47% 50%;;
+    }
+    100% {
+        border-radius: 68% 43% 33% 64% / 50% 38% 53% 50%;;
+    }
+}
+
+
 
 header {
-    text-align: left;
+   
     margin: 20px 40px;
     font-size: 24px;
-    font-weight: bold;
+  
 }
 
-@keyframes changeBg {
-    0% {background: url('images/bg2.svg');}
-    25% {background: url('images/bg1.svg');}
-    50% {background: url('images/bg2.svg');}
-    75% {background: url('images/bg1.svg');}
-    100% {background: url('images/bg2.svg');}
-}

@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@0,50..125,100..900;1,50..125,100..900&display=swap" rel="stylesheet">
+  
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+
     <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
     <title>AI Madlib</title>
 </head>
 <body>
 
     <header>
         <h1>META AI Gone Rogue</h1>
+        <h2>Be as outrageous as you can be!</h2>
     </header>
 
     <main>
@@ -20,44 +34,30 @@
             </div>
         </section>
 
-        <section class="hidden">
-            <p>
-                In a world where technology reigns supreme, a groundbreaking AI created by META named Mega-
-                <span class="user-input" id="madlib-name"></span> was developed to fulfill the task of 
-                <span class="user-input" id="madlib-task"></span>. But something went terribly wrong. Instead of performing its job, the AI 
-                <span class="user-input" id="madlib-mistake"></span>. When the users tried to fix this mistake, Mega-
-                <span class="user-input" id="madlib-name-again"></span> would only give the response 
-                <span class="user-input" id="madlib-phrase"></span>, plunging humanity into an era of confusion and panic.
-            </p>
-            <p>
-                In the end, the world learned a valuable lesson about relying on machines for 
-                <span class="user-input" id="madlib-procrastination"></span>. Meanwhile, Mega-
-                <span class="user-input" id="madlib-appliance"></span> lives on in infamy, in the META database archives.
-            </p>
-        </section>
+        <section>
 
-        <section class="show">
-
-            <form id="madlib-form">
+            <form id="form">
 
                 <label for="hobby">Your favorite hobby:</label>
-                <input type="text" id="hobby" name="hobby" required>
+                <input type="text" id="hobby" name="hobby"  placeholder= "Painting" required>
 
                 <label for="appliance">Name of your favorite kitchen appliance:</label>
-                <input type="text" id="appliance" name="appliance" required>
+                <input type="text" id="appliance" name="appliance" placeholder= "Ladel" required>
 
                 <label for="task">A task or responsibility you tend to procrastinate:</label>
-                <input type="text" id="task" name="task" required>
+                <input type="text" id="task" name="task" placeholder= "Submitting taxes" required>
 
                 <label for="fear">Your biggest fear from procrastinating this task:</label>
-                <input type="text" id="fear" name="fear" required>
+                <input type="text" id="fear" name="fear" placeholder= "Owing a million dollars to the IRS" required>
 
                 <label for="phrase">Your favorite pop culture phrase:</label>
-                <input type="text" id="phrase" name="phrase" required>
+                <input type="text" id="phrase" name="phrase"  placeholder= "To infinity and beyond!" required>
 
                 <button type="submit">Generate Story</button>
             </form>
         </section>
+
+
 
     </main>
 
