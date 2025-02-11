@@ -16,14 +16,22 @@ h2 {
     font-size: 2em;
 }
 
-
+.madlib {
+    margin: 40px;
+    justify-self: center;
+    justify-items: center;
+    align-content: center;
+}
 
 
 form {
+    justify-content: center;
+    align-items: cetner;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 400px;
+    min-width: 600x;
+    
     height: auto;
     margin-right: 90px;
     margin-bottom: 90px;
@@ -52,6 +60,7 @@ form input {
     font-size: 16px;
     transition: 0.3s ease-in-out;
     outline: none;
+
     
 }
 
@@ -206,4 +215,5 @@ header {
     font-size: 24px;
   
 }
+
 
