@@ -4,6 +4,8 @@ h1 {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -14,8 +16,16 @@ h2 {
     font-weight: 300;
     color: #0056b3;
     font-size: 2em;
+    margin-top: 0;
 }
 
+
+header {
+    margin-left: 2em;
+    margin-top: 2em;
+
+
+}
 
 
 form {
@@ -27,8 +37,10 @@ form {
     max-width: 400px;
     
     height: auto;
-    margin-right: 90px;
+    margin-right: 100px;
+    margin-left: 90px;
     margin-bottom: 90px;
+    margin-top: 40px;
     padding: 25px;
     border-radius: 12px;
     background: #e5eef9;
@@ -54,6 +66,7 @@ form input {
     font-size: 16px;
     transition: 0.3s ease-in-out;
     outline: none;
+    
 
     
 }
@@ -92,11 +105,15 @@ form button:focus {
     background: #0056b3;
 }
 
+span {
+    color: rgb(130, 53, 171);
+    font-weight: 500;
+}
 
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-start;
     
 }
 
@@ -104,6 +121,8 @@ main {
 body {
     background-image: url('images/bg1.svg');
     animation: bg 3s ease-in-out;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -114,6 +133,7 @@ body {
     align-items: center;
     flex: 1;
     margin-left: 50px;
+    margin-top: 50px;
     
 }
 
@@ -203,11 +223,5 @@ body {
 
 
 
-header {
-   
-    margin: 20px 40px;
-    font-size: 24px;
-  
-}
 
 
