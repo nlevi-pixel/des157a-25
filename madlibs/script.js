@@ -26,7 +26,7 @@
 
         myForm.style.fontSize = '20px';
 
-        input.style.co
+        
 
  
     });
