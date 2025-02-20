@@ -1,0 +1,227 @@
+h1 {
+    font-family: Saira;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+h2 {
+    font-family: "Saira", serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #0056b3;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+
+header {
+    margin-left: 2em;
+    margin-top: 2em;
+
+
+}
+
+
+form {
+    
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    
+    height: auto;
+    margin-right: 100px;
+    margin-left: 90px;
+    margin-bottom: 90px;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #e5eef9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    flex: 3;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+
+form input {
+    width: 80%;
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+    background: #fff;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+    
+
+    
+}
+
+
+form input:focus {
+    border-color: #8362d1;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    
+}
+
+
+form button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+}
+
+form button:focus {
+    background: #0056b3;
+}
+
+span {
+    color: rgb(130, 53, 171);
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+
+body {
+    background-image: url('images/bg1.svg');
+    animation: bg 3s ease-in-out;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.blobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
+
+
+.blob-parent {
+    height: 400px;
+    width: 340px;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    background: rgba(192, 200, 255, 0.468);
+    box-shadow: inset 6px 33px 20px 0 #9160eb81, inset 20px 80px 15px 0 #8c060612, 10px 20px 20px 0px #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 50px;
+    animation: rotateBlob 4s ease-in-out infinite alternate;
+   
+}
+
+
+.blob-child {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #86b5fbd7, #fffffff1);
+    border-radius: 80%;
+    position: absolute;
+    animation: rotateEye 4s ease-in-out infinite alternate;
+}
+
+.blob-child::before {
+    content: '';
+    position: absolute;
+    border-radius: 37% 54% 46% 46%;
+    background: rgb(93, 90, 90);
+    width: 20px;
+    height: 50px;
+    transform: rotate(25deg);
+    bottom: 50px;
+    right: 20px;
+}
+
+
+
+
+
+@keyframes rotateEye {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    20% {
+        transform: rotate(-36deg) translateY(20px) translateX(20px);
+    }
+    40% {
+        transform: rotate(-72deg) translateY(40px) translateX(20px);
+    }
+    60% {
+        transform: rotate(-108deg) translateY(60px)translateX(20px);
+    }
+    80% {
+        transform: rotate(-144deg) translateY(80px)translateX(20px);
+    }
+    100% {
+        transform: rotate(-150deg) translateY(80px)translateX(20px);
+    }
+}
+
+@keyframes rotateBlob {
+    0% {
+        border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    }
+    20% {
+        border-radius: 58% 53% 33% 74% / 50% 48% 53% 50%;
+    }
+    40% {
+        border-radius: 58% 63% 33% 64% / 50% 58% 53% 50%;;
+    }
+    60% {
+        border-radius: 58% 73% 33% 64% / 60% 38% 53% 50%;;
+    }
+    80% {
+        border-radius: 58% 43% 33% 72% / 50% 38% 47% 50%;;
+    }
+    100% {
+        border-radius: 68% 43% 33% 64% / 50% 38% 53% 50%;;
+    }
+}
+
+
+
+
+
