@@ -1,7 +1,7 @@
 
 header {
     color: #D74C07;
-    font-family: Allerta;
+    font-family: Arial, Helvetica, sans-serif;
     
     font-style: normal;
     font-weight: 100;
@@ -11,7 +11,9 @@ header {
     flex-direction: column;
     height: 200px;
     position: relative;
-    margin: 2em 2.5em 1em;
+    margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 2em;
 }
 
 header h1 {
@@ -39,9 +41,10 @@ header h2 {
 article.accordion
 {
 	display: block;
-	width: 50em;
+	width: 75em;
+	height: 26em;
 	margin: 0 auto;
-	background-color: #c57272;
+	background-color: #523737;
 	overflow: auto;
 	border-radius: 5px;
 	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
@@ -52,8 +55,8 @@ article.accordion section
 	display: flex;
     flex-direction: column;
 	float: left;
-	width: 2em;
-	height: 12em;
+	width: 5em;
+	height: 25em;
 	margin: 0.5em 0 0.5em 0.5em;
 	color: #333;
 	background-color: #333;
@@ -61,15 +64,14 @@ article.accordion section
 	border-radius: 3px;
 }
 article.accordion section h2
-{
+{	
+	font-family: Arial, Helvetica, sans-serif;
 	position: absolute;
-	font-size: 1em;
-	font-weight: bold;
+	font-size: 2em;
 	width: 12em;
 	height: 2em;
 	top: 12em;
 	left: 0;
-	text-indent: 1em;
 	padding: 0;
 	margin: 0;
 	color: #ddd;
@@ -83,6 +85,8 @@ article.accordion section h2
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
+	margin-left: 0.3em;
+	margin-bottom: 0;
 }
 article.accordion section h2 a
 {
@@ -92,13 +96,23 @@ article.accordion section h2 a
 	text-decoration: none;
 	color: inherit;
 	outline: 0 none;
+	;
 }
+
+article.accordion section h2 a:hover {
+	color: #D74C07;
+}
+
 article.accordion section:target
 {
-	width: 30em;
+	width: 50em;
 	padding: 0 1em;
 	color: #333;
 	background-color: #cabcaf;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
 }
 article.accordion section:target h2
 {
@@ -112,6 +126,7 @@ article.accordion section:target h2
 	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
+
 article.accordion section,
 article.accordion section h2
 {
@@ -124,7 +139,7 @@ article.accordion section h2
 
 article.accordion section img {
     display: none;
-    width: 90%; 
+    width: 70%; 
     height: auto; 
     position: absolute; 
     top: 0;
@@ -133,23 +148,80 @@ article.accordion section img {
 }
 
 
-article.accordion section:target img {
+article.accordion section:target .car img {
     display: block;
-    height: 100%; 
-    margin-left: 10em;
+    margin-left: 5em;
+	max-width: 600px;
+	margin-left: 20em;
+}
+
+article.accordion section:target .cameo img {
+    display: block;
+	margin-left: 20em;
+}
+
+article.accordion section:target .trinket img {
+    display: block;
+	max-width: 400px;
+	margin-left: 20em;
+}
+
+article.accordion section:target .mirror img {
+    display: block;
+    margin-left: 5em;
+	margin-left: 20em;
+	margin-bottom: 30em;
 }
 
 .image2 {
-    transform: rotate(30deg) translate(5px,5pxpx);
+    transform: rotate(30deg);
     opacity: 80%;
  }
 
  .image3 {
-    transform: rotate(60deg) translate(5px,5px);
+    transform: rotate(60deg) ;
     opacity: 80%;
+
  }
 
  .image4 {
-    transform: rotate(200deg) translate(5px,5px);
+    transform: rotate(90deg);
     opacity: 80%;
+
  }
+
+ .move {
+    display: flex;
+	gap: 1em;
+	margin-left: 2em;
+	margin-top: 1em;
+	border-bottom: #333;
+	border: #333;
+}
+
+.move a {
+	text-decoration: none;
+	color: #333;
+	font-size: 1.2em;
+}
+
+article.accordion section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    text-align: center;
+    position: absolute;
+    width: 100%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+article.accordion section h3 a {
+	text-decoration: none;
+	color: #ddd;
+}
+article.accordion section:target h3 a{
+	color: #cabcaf;
+}
