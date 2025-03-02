@@ -9,7 +9,7 @@
                 const visibleImages = section.querySelectorAll("img:not([style*='display: none'])");
 
                 if (visibleImages.length > 1) {
-                    this.style.display = "none"; 
+                    img.style.display = "none"; 
                 }
 
             });
