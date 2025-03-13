@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Game</title>
+
+    <!-- Normalize CSS for Browser Consistency -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="left-half"></div>
+        <div class="right-half"></div>
+      </div>
+
+    <div class="sun">
+        <div></div>
+    </div>
+
+    <header>
+        <h1>Battle Game</h1>
+        <h2>A Monument Valley Experiment</h2>
+    </header>
+
+    <section id="game">
+        <div>
+            <h2>ROE</h2>
+            <img src="images/character1.png" alt="roe" width="300" height="300" id="Roe">
+            
+            <!-- The divs inside the healthbar0 and healthbar1 divs are set to position
+            absolute and have a width of 100%. As the game progresses their width is changed to 
+            represent the percentage of health they have left. They have 0 and 1 at the end so that
+            they can be easily targeted by JS based on the index value which is either 0 or 1 -->
+            <div class="health">
+                <div id="healthbar0"><div></div></div><p id="monsterhealth0"></p>
+            </div>
+        </div>
+        <div>
+            <h2>IDA</h2>
+            <img src="images/character2.png" alt="ida" width="300" height="300" id="Ida">
+            <div class="health">
+                <div id="healthbar1"><div></div></div><p id="monsterhealth1"></p>
+            </div>
+        </div>
+        <div class="platform1">
+        <img src="images/platform1.png" alt="platform" width="135px">
+        </div>
+        <div class="platform2">
+            <img src="images/platform2.png" alt="platform" width="135px">
+            </div>
+    </section>
+    <section id="action">
+        <div id="messages">
+            <p>Press the start button to randomly select the first monster to attack!</p>
+            <button id="start">Start Battle!</button>
+        </div>
+        <button id="attack" class="hidden">Attack!</button>
+    </section>
+    
+</body>
+</html>
